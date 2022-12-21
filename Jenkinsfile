@@ -17,7 +17,7 @@ pipeline {
         sh '''current_time="mysql".$(date "+%Y.%m.%d-%H.%M.%S")
 
 '''
-        sh 'sudo docker commit 257fb6ca17d6 $current_time'
+        sh 'echo \'seddik\' | sudo -S docker commit 257fb6ca17d6 $current_time '
       }
     }
 
