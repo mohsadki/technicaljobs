@@ -9,7 +9,7 @@ pipeline {
     stage('S1_start') {
       steps {
         echo 'mysql save'
-        mail(subject: 'mysql save start', body: 'mysql save')
+        mail(subject: 'mysql save start', body: 'mysql save', to: 'mohsadki@gmail.com')
       }
     }
 
