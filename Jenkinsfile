@@ -14,10 +14,7 @@ pipeline {
 
     stage('S2_save') {
       steps {
-        sh '''current_time="mysql".$(date "+%Y.%m.%d-%H.%M.%S")
-
-'''
-        sh 'echo \'seddik\' | sudo -S docker commit 257fb6ca17d6 $current_time '
+        sh 'echo \'seddik\' | sudo -S docker commit 257fb6ca17d6 257fb6ca17d6 "mysql".$(date "+%Y.%m.%d-%H.%M.%S")'
       }
     }
 
